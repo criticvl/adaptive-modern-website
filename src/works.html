@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Home Page' })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+
+      <section>
+        <div class="works-wrapper">
+          <h3>Work</h3>
+          <div class="section-works-container">
+            <div class="work-row">
+              <img src="@imgs/workAsset1.png" alt="work" />
+              <div class="work-card">
+                <a href="work-details.html">Designing Dashboards</a>
+                <div class="work-info">
+                  <h4 class="work-year">2022</h4>
+                  <h4 class="work-type">Dashboard</h4>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="work-underline"></div>
+            <div class="work-row">
+              <img class="work-image" src="@imgs/workAsset2.png" alt="work" />
+              <div class="work-card">
+                <a href="work-details.html">Vibrant Portraits of 2020</a>
+                <div class="work-info">
+                  <h4 class="work-year">2020</h4>
+                  <h4 class="work-type">Illustration</h4>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="work-underline"></div>
+            <div class="work-row">
+              <img class="work-image" src="@imgs/workAsset3.png" alt="work" />
+              <div class="work-card">
+                <a href="work-details.html">36 Days of Malayalam type</a>
+                <div class="work-info">
+                  <h4 class="work-year">2019</h4>
+                  <h4 class="work-type">Typography</h4>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="work-underline"></div>
+          </div>
+        </div>
+      </section>
+
+      @@include('html/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

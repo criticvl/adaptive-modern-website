@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Home Page' })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <section>
+        <div class="blog-wrapper blog-container">
+          <div class="blog-row">
+            <h1 class="blog-post-header">UI Interactions of the week</h1>
+            <div class="blog-info">
+              <h3>12 Feb 2019</h3>
+              <div class="separator"></div>
+              <h4>Express, Handlebars</h4>
+            </div>
+            <p class="blog-post-paragraph">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet. Amet minim mollit
+              non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam
+              consequat sunt nostrud amet. Amet minim mollit non deserunt
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+              do amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="blog-post-footer">@@include('html/footer.html', {})</div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Home Page' })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <section class="contact-wrapper contact-container">
+        <form action="" class="contact-form">
+          <div class="col-sm-6">
+            <div class="input-block">
+              <label for="">First Name</label>
+              <input
+                placeholder="First Name"
+                type="text"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-block">
+              <label for="">Last Name</label>
+              <input placeholder="Last Name" type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="input-block">
+              <label for="">Email</label>
+              <input placeholder="Email" type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="input-block">
+              <label for="">Message Subject</label>
+              <input
+                placeholder="Message Subject"
+                type="text"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="input-block textarea">
+              <label for="">Drop your message here</label>
+              <textarea
+                placeholder="Drop your message here"
+                rows="3"
+                type="text"
+                class="form-control"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <button class="square-button">Send</button>
+          </div>
+        </form>
+      </section>
+      <div class="contact-footer">@@include('html/footer.html', {})</div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

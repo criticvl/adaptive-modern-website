@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap&subset=latin-ext");
+@import "fonts.scss";
+@import "icons.scss";
+
+@import "header.scss";
+@import "main.scss";
+@import "blog.scss";
+@import "works.scss";
+@import "work-details.scss";
+@import "contact.scss";
+@import "footer.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: $font-family;
+  cursor: default;
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $color-dark;
+  background-color: white;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(72, 72, 72);
+}
+
+section {
+  background-color: white;
+}
+
+img,
+button {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.navigation-scroll {
+  background-color: #dae3e6;
+  box-shadow: 0 4px 2px -3px $color-light;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $max-width-container;
+  box-sizing: content-box !important;
+  padding: 0 18px;
+
+  @media (max-width: $bp-md) {
+    max-width: 736px;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}

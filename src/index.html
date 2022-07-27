@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Home Page' })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main>
+        <section>
+          <div class="hero-wrapper">
+            <div class="hero-container container">
+              <div class="hero-text">
+                <h1>
+                  <span>Hi, I am John,</span>
+                  <span>Creative Technologist</span>
+                </h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+              <img src="@imgs/hero.png" alt="hero" />
+            </div>
+            <div class="resume-container container">
+              <button class="button-resume">Download Resume</button>
+            </div>
+          </div>
+        </section>
+        <section class="light">
+          <div class="section-posts-wrapper container">
+            <div class="section-name">
+              <h3>Recent posts</h3>
+              <a href="blog.html">View all</a>
+            </div>
+            <div class="section-posts-container">
+              <div class="post-card">
+                <a href="blog-post.html">Making a design system from scratch</a>
+                <div class="card-info">
+                  <h4>12 Feb 2020</h4>
+                  <div class="separator"></div>
+                  <h4>Design, Pattern</h4>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+              <div class="post-card">
+                <a href="blog-post.html">Creating pixel perfect icons in Figma</a>
+                <div class="card-info">
+                  <h4>12 Feb 2020</h4>
+                  <div class="separator"></div>
+                  <h4>Figma, Icon Design</h4>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="section-works-wrapper container">
+            <div class="section-header-wrapper">
+              <h3>Featured works</h3>
+              <a href="works.html">View all</a>
+            </div>
+            <div class="section-works-container">
+              <div class="work-row">
+                <img src="@imgs/workAsset1.png" alt="work" />
+                <div class="work-card">
+                  <a href="work-details.html">Designing Dashboards</a>
+                  <div class="work-info">
+                    <h4 class="work-year">2022</h4>
+                    <h4 class="work-type">Dashboard</h4>
+                  </div>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+              </div>
+              <div class="work-underline"></div>
+              <div class="work-row">
+                <img src="@imgs/workAsset2.png" alt="work" />
+                <div class="work-card">
+                  <a href="work-details.html">Vibrant Portraits of 2020</a>
+                  <div class="work-info">
+                    <h4 class="work-year">2020</h4>
+                    <h4 class="work-type">Illustration</h4>
+                  </div>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+              </div>
+              <div class="work-underline"></div>
+              <div class="work-row">
+                <img class="work-image" src="@imgs/workAsset3.png" alt="work" />
+                <div class="work-card">
+                  <a href="work-details.html">36 Days of Malayalam type</a>
+                  <div class="work-info">
+                    <h4 class="work-year">2019</h4>
+                    <h4 class="work-type">Typography</h4>
+                  </div>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+              </div>
+              <div class="work-underline"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

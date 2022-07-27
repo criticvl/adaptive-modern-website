@@ -1,0 +1,157 @@
+@import "variables.scss";
+
+$max-width-contact: 680px;
+
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  footer {
+    height: auto !important;
+    padding-bottom: 48px;
+  }
+
+  @media (max-width: $bp-sm) {
+    position: relative;
+    padding-top: 60px;
+  }
+}
+
+.contact-container {
+  max-width: $max-width-contact;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  padding-top: 160px;
+
+  @media (min-width: $bp-md) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: $bp-sm) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: $bp-xs) {
+    padding-top: 60px;
+  }
+
+  .contact-form {
+    padding: 16px;
+
+    .input-block {
+      background-color: white;
+      width: 100%;
+      margin-bottom: 18px;
+      transition: all 0.3s ease-out;
+      &.focus {
+        background-color: white;
+      }
+      &.textarea {
+        .form-control {
+          resize: none;
+        }
+      }
+      textarea {
+        width: 100%;
+        outline: none !important;
+        padding: 8px;
+        border: solid 1px $color-dark;
+        &::placeholder {
+          color: $color-light;
+        }
+
+        @media (min-width: $bp-md) {
+          &::placeholder {
+            color: white;
+          }
+        }
+      }
+      input {
+        width: 100%;
+        height: 100%;
+        border: solid 1px $color-dark;
+        outline: none !important;
+        background-color: red;
+        padding: 8px;
+        font-size: 20px;
+        color: $color-dark;
+        &::placeholder {
+          color: $color-light;
+        }
+
+        @media (min-width: $bp-md) {
+          &::placeholder {
+            color: white;
+          }
+        }
+      }
+      .form-control {
+        background-color: white;
+        font-size: 18px;
+        color: $color-dark;
+      }
+      .form-control:focus {
+        label {
+          top: 0;
+        }
+      }
+    }
+    .square-button {
+      background-color: white;
+      color: $color-dark;
+      cursor: pointer;
+      font-size: 26px;
+      text-transform: uppercase;
+      border: solid 1px $color-dark;
+      font-weight: 700;
+      text-align: center;
+      transition: all 0.3s ease;
+      padding: 10px 60px;
+      width: 100%;
+      &:hover,
+      &:focus {
+        background-color: $color-dark;
+        color: white;
+      }
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    .contact-wrapper {
+      width: 60%;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: $bp-md) {
+    label {
+      display: none !important;
+    }
+  }
+
+  .contact-wrap {
+    padding: 15px;
+  }
+
+  h1 {
+    background-color: white;
+    color: lighten($color-primary, 10%);
+    padding: 40px;
+    margin: 0 0 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    small {
+      font-size: 18px;
+      display: block;
+      text-transform: none;
+      font-weight: 300;
+      margin-top: 10px;
+      color: lighten($color-primary, 10%);
+    }
+  }
+}
